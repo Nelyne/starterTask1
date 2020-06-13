@@ -1,0 +1,175 @@
+:root {
+--primary: #EEEEEE;
+--dark: #333;
+--light: #fff;
+--grey: #e5e5e5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    
+    font-family: 'Lato', sans-serif;
+    color: var(--dark);
+}
+
+body {
+    background: #fff;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Navigation */
+.main-nav {
+    display: flex;
+    background-color: var(--light);
+    flex-direction: row;
+  
+    margin:0 auto ;
+    width:800px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: start;
+    
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    
+    margin: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.links2{
+    display: flex;
+    justify-content: end;
+    margin: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+a{
+    text-decoration: none;
+    display:block;
+    padding-top: 1.5rem;
+    color: var(--dark);
+    padding-left: 1.5rem;
+}
+
+
+.boxes{
+    display: grid;
+    gap: 1rem;
+    width: 800px;
+    margin: 0 auto;
+    grid-template-areas: 
+    'recliner recliner lamp chair'
+    'recliner recliner sofa sofa';
+}
+
+.boxes img{
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.R-txt {
+    grid-area: recliner;
+    
+    text-align: center;
+    min-width:400px;
+}
+
+.L-txt {
+    grid-area: lamp;
+    width: 150px;
+    text-align:center;
+}
+
+.C-txt {
+    grid-area: chair;
+    
+}
+
+
+
+.S-txt {
+    grid-area: sofa;
+    min-width: 400px;
+}
+
+ .R-txt {
+     position: relative;
+    background-color: var(--grey);
+ }
+
+ .r-text {
+     position: absolute;
+     top: 90%;
+     margin: 0.5rem;
+ }
+
+ .C-txt {
+     position: relative;
+     background-color: var(--grey);
+ }
+
+ .c-text {
+     position: absolute;
+     top: 80%;
+     margin: 0.5rem;
+ }
+
+ .L-txt{
+     position: relative;
+     background-color: var(--grey);
+ }
+
+ .l-text {
+     position: absolute;
+     top: 80%;
+     margin: 0.5rem;
+ }
+
+ .S-txt {
+     position: relative;
+     background-color: var(--grey);
+ }
+
+ .s-text {
+     position: absolute;
+     top: 80%;
+     margin: 0.5rem;
+ }
+
+ .fas{
+     padding-left: 1rem;
+ }
+
+ /* MEDIA QUARIES*/
+
+ @media (max-width: 700px) {
+     .boxes {
+         display: grid;
+         grid-template-columns: 
+         'recliner recliner'
+         'lamp chair'
+         'sofa sofa';
+     }
+
+ }
