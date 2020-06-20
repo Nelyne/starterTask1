@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    background: #fff;
+    background: var(--primary);
     margin: 30px 50px;
     line-height: 1.4;
 }
@@ -63,6 +63,12 @@ img {
     padding-bottom: 1rem;
 }
 
+.container {
+    width: 80%;
+    border: 1px solid #fff;
+    background-color: var(--light);
+    margin: 0 auto;
+}
 
 a{
     text-decoration: none;
@@ -76,8 +82,9 @@ a{
 .boxes{
     display: grid;
     gap: 1rem;
+    background-color: var(--light);
     width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 3rem;
     grid-template-areas: 
     'recliner recliner lamp chair'
     'recliner recliner sofa sofa';
@@ -99,6 +106,7 @@ a{
     grid-area: lamp;
     width: 150px;
     text-align:center;
+    height: 97%;
 }
 
 .C-txt {
@@ -127,6 +135,7 @@ a{
  .C-txt {
      position: relative;
      background-color: var(--grey);
+     margin-bottom: 0.5rem;
  }
 
  .c-text {
